@@ -56,6 +56,6 @@ while run:
 
     for i in range(H):
         y = nrm(i/H,M[t],S[t],A[t])
-        pygame.draw.aaline(screen, (125 + int(50*(1-t/H)),75 + int(150*i*t/(H*H)),150 + int(10*(i/H))), (H+i,int(H/2) + 4 - y), (H+i,int(H/2) - 4 - y),0)
-
+        pygame.draw.aaline(screen, (125 + int(50*(1-t/H)),75 + int(150*i*t/(H*H)),150 + int(10*(i/H))), (H+i,int(H/2) + 0.25), (H+i,int(H/2) - 0.25 - y),0)
+        
     pygame.display.update()
